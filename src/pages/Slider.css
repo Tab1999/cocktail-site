@@ -1,0 +1,26 @@
+.mySwiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.swiper-slide {
+   
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 7%;
+}
+.bg1{
+/* background-image: linear-gradient(to right, rgb(220, 248, 168), rgb(120, 128, 117)); */
+ opacity: 0.9;
+
+}

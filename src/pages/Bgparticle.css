@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+}
+
+/* ====================
+    Background
+=======================*/
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  animation: pulse 5s infinite;
+  overflow: hidden;
+ 
+}
+
+@keyframes pulse {
+  0% {background: rgb(86, 178, 178);}
+  25% {background: rgb(155, 84, 140);}
+  50% {background: rgb(79, 141, 110)}
+  25% {background: rgb(150, 73, 83);}
+  100% {background: rgb(112, 72, 144);}
+}
+.elements{
+  top: 50%;
+  align-items: center;
+}
+
+h1{
+text-align: center;
+  font-family: 'Courgette', cursive;
+  padding-top: 50px;
+  font-size: 50px;
+  letter-spacing: 12px;
+  animation: flicker 1.5s infinite alternate;
+  color: rgb(230, 230, 230);
+}
+
+@keyframes flicker {
+
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #5271ff,
+      0 0 82px #5271ff,
+      0 0 92px #5271ff,
+      0 0 102px #5271ff,
+      0 0 151px #5271ff;
+
+  }
+    20%,
+    24%,
+    55% {
+      text-shadow: none;
+    }
+    }
+
+
+ 
+
