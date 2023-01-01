@@ -1,4 +1,5 @@
 import "./Home.css";
+import "./Bgparticle.css"
 import About from './Slider'
 import { Parallax } from 'react-parallax';
 import {motion} from 'framer-motion';
@@ -13,15 +14,17 @@ function Home(){
       return<>
       <Parallax className='image' blur={0} bgImage={image1} strength={800} bgImageStyle={{minHeight:"100vh"}}>
               
-        <div className='content'>
-            <motion.span className="img-txt"animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+        <div  className='content'>
+            {/* <motion.span className="img-txt"animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
                 transition={{
                     duration: 5,
                     delay: 0.3,
                     ease: [0.5, 0.71, 1, 1.5],
                 }}
                 initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ scale: 1.2 }}>Keep calm and Cocktail on!</motion.span> 
+                whileInView={{ scale: 1.2 }}>Keep calm and Cocktail on!</motion.span>  */}
+                 <motion.h1 className="img-txt"
+                whileInView={{ scale: 1.2 }}>Keep calm and Cocktail on!</motion.h1> 
           
            
         </div>
@@ -39,19 +42,25 @@ function Home(){
 
      <Parallax className='image' blur={0} bgImage={image2} strength={800} bgImageStyle={{minHeight:"100vh"}}>
         <div className='content'>
-             <motion.span className="img-txt"animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+             {/* <motion.span className="img-txt"animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
                 transition={{
                     duration: 5,
                     delay: 0.3,
                     ease: [0.5, 0.71, 1, 1],
                 }}
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ scale: 1.2 }}>You can please your guests with a well-made cocktail.</motion.span>
+                initial={{ opacity: 0, scale: 0.5 }}>You can please your guests with a well-made cocktail.</motion.span> */}
+                <motion.span className="img-txt" style={{opacity: 1}}  animate={{ x: [0, 0, 0], opacity: 1, scale: 1 }}
+                transition={{
+                    duration: 5,
+                    delay: 0.3,
+                    ease: [0.5, 0.71, 1, 1],
+                }}
+                initial={{ opacity: 0, scale: 0.5 }} whileInView={{ scale: 1.2 }}>You can please your guests with a well-made cocktail.</motion.span>
         </div>
     </Parallax>
 
     <div className='text-box'>
-           <h3> <a href="https://www.cocktailhammer.com/">Cocktail Hammer</a></h3>
+           <h3  style={{marginLeft:"40%"}} className='btn btn-primary btn-details'> <a href="https://www.cocktailhammer.com/">Cocktail Hammer</a></h3>
             <p>Looking to get hammered? Say hello to Cocktail Hammer. Their tagline is “Stay home, get hammered,” 
               and that really says it all. Cocktail Hammer is a great website for those specifically looking to make 
               drinks from the comfort of their own home.
@@ -60,7 +69,7 @@ function Home(){
 
     <Parallax className='image' blur={0} bgImage={image3} strength={800} bgImageStyle={{minHeight:"100vh"}}>
         <div className='content'>
-            <motion.span className="img-txt"animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+            <motion.span className="img-txt"animate={{ x: [0, 0, 0], opacity: 1, scale: 1 }}
                 transition={{
                     duration: 5,
                     delay: 0.3,
@@ -72,7 +81,7 @@ function Home(){
     </Parallax>
 
      <div className='text-box'>
-            <h3><a href="https://tipsybartender.com/">The Tipsy Bartender</a></h3>
+            <h3 style={{marginLeft:"40%"}} className='btn btn-primary btn-details'><a href="https://tipsybartender.com/">The Tipsy Bartender</a></h3>
             <p>The Tipsy Bartender offers great cocktail recipes all the time, but one of this cocktail blog's 
               coolest features is “My Liquor Cabinet.” Just type in the alcohol you have on hand and voilà! The 
               blog magically generates a list of great cocktails you can make.
@@ -81,7 +90,7 @@ function Home(){
 
          <Parallax className='image' blur={0} bgImage={image4} strength={800} bgImageStyle={{minHeight:"100vh"}}>
         <div className='content'>
-             <motion.span className="img-txt"animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+             <motion.span className="img-txt"animate={{ x: [0, 0, 0], opacity: 1, scale: 1 }}
                 transition={{
                     duration: 5,
                     delay: 0.3,
@@ -93,7 +102,7 @@ function Home(){
     </Parallax>
 
      <div className='text-box'>
-            <h3><a href="https://talesofthecocktail.org/">Tales of the Cocktail</a></h3>
+            <h3 style={{marginLeft:"40%"}} className='btn btn-primary btn-details'><a href="https://talesofthecocktail.org/">Tales of the Cocktail</a></h3>
             <p>Tales of the Cocktail is a bit different from other blogs. This isn’t just about drink reviews 
               or recipes, but the Tales of the Cocktail event and other great liquor gatherings around the world. 
               They tell the stories of bartenders, talk about the history of spirits, and present news from around the industry.
@@ -102,7 +111,7 @@ function Home(){
        
        <Parallax className='image' blur={0} bgImage={image5} strength={800} bgImageStyle={{minHeight:"100vh"}}>
         <div className='content'>
-            <motion.span className="img-txt"animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+            <motion.span className="img-txt"animate={{ x: [0, 0, 0], opacity: 1, scale: 1 }}
                 transition={{
                     duration: 5,
                     delay: 0.3,

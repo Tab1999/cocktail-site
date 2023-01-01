@@ -258,6 +258,7 @@ Cocktail
 }
 .cocktail-footer h3 {
   font-size: 2rem;
+  color: var(--mainOverlay);
 }
 .cocktail-footer p {
   color: rgb(86, 83, 83);
